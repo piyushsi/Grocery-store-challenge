@@ -33,16 +33,15 @@ def calculatePrice
   #   n.to_i * priceList[n]
   #  }23
 
-  puts "hi"
   priceList = { "1" => 3.97, "2" => 0.89, "3" => 2.17, "4" => 0.99,"11" => 5.00, "333"=> 6.00 }
 
-  # allPrice =  allProductsArray.map { 
-  #   |n| 
-  #   n.to_i * priceList[n]
-  #  }
-  #  sum = 0
-  #  allPrice.each { |a| sum+=a }
-  #  puts sum 
+  allPrice =  allProductsArray.map { 
+    |n| 
+    n.to_i * priceList[n]
+   }
+   sum = 0
+   allPrice.each { |a| sum+=a }
+   puts "Total price : $#{sum} " 
 end
   
 #method call
